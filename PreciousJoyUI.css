@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------------Add tags---------------------*/
+#pj-add-tags-wrapper {
+  border: 1px solid rgb(204, 208, 215);
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: 0.5rem 0;
+  box-sizing: content-box;
+}
+#pj-add-tags-container {
+  display: inline-block;
+  /*height: 100%;*/
+  vertical-align: top;
+  margin-left: 1rem;
+}
+.pj-add-tags-items {
+  background: rgb(0, 161, 214);
+  display: inline-block;
+  height: 1.7rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  margin-right: 0.5rem;
+  border-radius: 999em;
+}
+.pj-add-tags-items div {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.5rem;
+  margin-left: 0.5rem;
+}
+.pj-add-tags-items:hover {
+  cursor: pointer;
+}
+.pj-add-tags-items div span {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+#pj-add-tags-input {
+  display: inline-block;
+  height: 100%;
+}
+#pj-add-tags-input-item {
+  border: none;
+  height: 2.5rem;
+  padding: 0;
+  /*position: absolute;*/
+  /*left: 0.5rem;*/
+  /*bottom: 0;*/
+}
+#pj-add-tags-input-item:focus {
+  outline-width: 0;
+}
+#pj-add-tags-left {
+  display: inline-block;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.6rem;
+  color: rgb(167, 167, 167);
+}
+input::-webkit-input-placeholder {
+  color: rgb(167, 167, 167);
+}
+
+@media screen and (max-width: 768px) {
+  #pj-add-tags-left {
+    visibility: hidden;
+  }
+}
+
+@media all and (orientation : portrait) {
+  #pj-add-tags-left {
+    visibility: hidden;
+  }
+}
+/*---------------------Add tags---------------------*/
+
+/*---------------------Carousel---------------------*/
+#pj-carousel-outer {
+  /*necessary and unchangeable*/
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  /*necessary and custom*/
+  height: 511px;
+  width: 100%;
+  padding: 0.5em;
+  background: #bfa;
+  margin-top: -3em;
+}
+#pj-carousel-outer #pj-carousel-boxList {
+  /*necessary and unchangeable*/
+  list-style: none;
+  position: absolute;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item {
+  /*necessary and unchangeable*/
+  float: left;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item .pj-carousel-box {
+  height: 100%;
+  /*custom*/
+  width: 100%;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item:nth-of-type(1) .pj-carousel-box {
+  background: red;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item:nth-of-type(2) .pj-carousel-box {
+  background: orange;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item:nth-of-type(3) .pj-carousel-box {
+  background: yellow;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item:nth-of-type(4) .pj-carousel-box {
+  background: green;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item:nth-of-type(5) .pj-carousel-box {
+  background: cyan;
+}
+#pj-carousel-outer #pj-carousel-boxList .pj-carousel-item:nth-of-type(6) .pj-carousel-box {
+  background: red;
+}
+#pj-carousel-outer #pj-carousel-nav {
+  /*necessary and unchangeable*/
+  position: absolute;
+  /*custom*/
+  bottom: 15px;
+}
+#pj-carousel-outer #pj-carousel-nav .pj-carousel-a {
+  /*necessary and unchangeable*/
+  float: left;
+  /*custom*/
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  margin: 0 5px;
+  opacity: 0.5;
+  /*兼容IE8透明*/
+  filter: alpha(opacity=50);
+}
+#pj-carousel-outer #pj-carousel-nav .pj-carousel-a:hover {
+  /*custom*/
+  background-color: black;
+}
+
+/*---------------------Carousel---------------------*/
+
+
